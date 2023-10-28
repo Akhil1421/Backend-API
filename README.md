@@ -143,6 +143,8 @@ curl --location 'baseUrl/api/?code=ajklds&scopes=kljkal'
 - In Authorized redirect URIs, add <b>http://localhost:8000/api/</b>
 - Save the information and download json file containing credentials.
 - Add that json file to the project directory with name credentials.json.
+- Change the credentials value in routers in api_routers.py according to this file
+- Change the credentials in crederntials.js as well.
 
 ## Run Development server
 Command:
