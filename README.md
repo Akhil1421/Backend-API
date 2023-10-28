@@ -92,9 +92,9 @@
         - If the user has earlier provided permission for this email then it will be stored in the database along with its refresh and access tokens.
         - With the help of stored tokens, we make call to gmail API to get the emails of user after which processing of email in the same way as "/" api endpoint is done but in this case filter checks are applied in the code to get transactions from specific time range only.
     
-    -"/api/total_balance"
-       - Get request on this api point will be done with query parameter email which contains the gmail of which we are trying to get the data along with date query parameter (date of transactions).
-       - If the user has earlier provided permission for this email then it will be stored in the database along with its refresh and access tokens.
+    - "/api/total_balance"
+        - Get request on this api point will be done with query parameter email which contains the gmail of which we are trying to get the data along with date query parameter (date of transactions).
+        - If the user has earlier provided permission for this email then it will be stored in the database along with its refresh and access tokens.
         - With the help of stored tokens, we make call to gmail API to get the emails of user after which processing of email in the same way as other endpoints is done.
         - After all the transactions are collected , their dates are checked and compared with the given date and based on the decisions of the algorithm the total balance to be returned is affected and ultimately returned as response.
 
